@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+
+<div class="jumbotron mt-4">
+  <h1 class="display-4">Openweather, free!</h1>
+  <article class="media">
+        <div class="media-left">
+            <figure class="image is-50x50">
+                <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image">
+            </figure>
+        </div>
+        <div class="media-content">
+            <div class="content">
+                <p>
+                    <span class="title">{{ weather.city }}</span>
+                    <br>
+                    <span class="subtitle">{{ weather.temperature }}° F</span>
+                    <br> {{ weather.description }}
+                </p>
+            </div>
+        </div>
+    </article>
+  <a class="btn btn-primary btn-lg" href="https://openweathermap.org/api" role="button">Learn more</a>
+</div>
+
+</div>
+
+{% endblock content %}
