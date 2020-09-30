@@ -28,3 +28,7 @@ $ manage.py runserver
     |
     |___ manage.py
  
+# docs
+
+ - GET method recieve all audit records
+ - POST method recieve JSON if date(day) is prime else receive "Date is not prime so no date" text message.
