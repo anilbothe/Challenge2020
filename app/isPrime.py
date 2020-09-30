@@ -14,5 +14,4 @@ class myFunction:
             # is not a prime number
             return False
 
-# obj = myFunction()
-# print(obj.isPrime(3))
+# print(myFunction.isPrime(3))
